@@ -17,7 +17,7 @@ RUN pip install gitpython
 RUN git clone https://github.com/ledriod/oppia.git
 
 WORKDIR /root/opensource/oppia
-RUN git checkout develop 
+RUN git checkout master 
 
 RUN bash scripts/install_prerequisites.sh
 RUN bash scripts/setup.sh
